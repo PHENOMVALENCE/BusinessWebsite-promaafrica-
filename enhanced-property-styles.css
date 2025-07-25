@@ -1,0 +1,416 @@
+/* Enhanced Property Card Styles */
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: var(--spacing-2xl);
+  padding: 0 var(--spacing-lg);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.property-card {
+  background-color: var(--bg-white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-normal);
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.property-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.property-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.property-card:hover .property-image img {
+  transform: scale(1.08);
+}
+
+.property-status {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: var(--bg-white);
+  padding: 8px 16px;
+  border-radius: var(--border-radius-xl);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(246, 174, 1, 0.3);
+}
+
+.property-status.sold {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.property-status.pending {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+  color: var(--text-dark);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.property-price {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  color: var(--bg-white);
+  padding: 12px 20px;
+  border-radius: var(--border-radius-xl);
+  font-weight: 800;
+  font-size: 1.2rem;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.property-content {
+  padding: var(--spacing-2xl);
+}
+
+.property-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.property-location {
+  color: var(--text-medium);
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.property-location i {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.property-description {
+  color: var(--text-medium);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-xl);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.property-features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-md) 0;
+  border-top: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-medium);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.feature i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+
+.property-actions {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.btn-whatsapp {
+  flex: 1;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: var(--bg-white);
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, #128c7e, #075e54);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn-email {
+  flex: 1;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, var(--secondary-color), #004494);
+  color: var(--bg-white);
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.btn-email:hover {
+  background: linear-gradient(135deg, #004494, #003366);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 86, 179, 0.3);
+}
+
+/* Email Modal Styles */
+.email-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.email-modal-content {
+  background-color: var(--bg-white);
+  margin: 5% auto;
+  padding: 0;
+  border-radius: var(--border-radius-lg);
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.email-modal-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: var(--bg-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+  position: relative;
+}
+
+.email-modal-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.email-close {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bg-white);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color var(--transition-normal);
+}
+
+.email-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.email-modal-body {
+  padding: var(--spacing-2xl);
+}
+
+.email-form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.email-form-group label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.email-form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: var(--border-radius-md);
+  font-size: 1rem;
+  transition: border-color var(--transition-normal);
+}
+
+.email-form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(246, 174, 1, 0.1);
+}
+
+.email-send-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  color: var(--bg-white);
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.email-send-btn:hover {
+  background: linear-gradient(135deg, var(--primary-hover), #d4940a);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(246, 174, 1, 0.3);
+}
+
+.email-send-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Loading and Success States */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.success-message,
+.error-message {
+  padding: 12px 15px;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 500;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .properties-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    padding: 0 var(--spacing-md);
+  }
+
+  .property-card {
+    margin: 0;
+  }
+
+  .property-image {
+    height: 250px;
+  }
+
+  .property-content {
+    padding: var(--spacing-xl);
+  }
+
+  .property-actions {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .btn-whatsapp,
+  .btn-email {
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
+
+  .email-modal-content {
+    margin: 10% auto;
+    width: 95%;
+  }
+
+  .email-modal-body {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .property-features {
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+
+  .feature {
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .property-price {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .property-status {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+}
