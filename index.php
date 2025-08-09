@@ -90,11 +90,16 @@
   --spacing-3xl: 60px;
   --container-padding: 20px;
   --header-height: 70px; /* Added for consistency with sales-styles */
+<<<<<<< HEAD
    font-family: "Gill Sans MT", sans-serif;
 }
 
 
 
+=======
+}
+
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 /* Properties Showcase Section */
 .properties-showcase {
   padding: var(--spacing-3xl) 0;
@@ -409,7 +414,10 @@
                     <a href="services.php">Services</a>
                     <a href="news.php" class="news-link">News & Blogs</a>
                     <a href="contact.php">Contact</a>
+<<<<<<< HEAD
                     <a href="sales.php">Property For Sale</a>
+=======
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
                     <a href="#" class="close-btn" id="closeBtn"><i class="fas fa-times"></i></a>
                 </div>
             </div>

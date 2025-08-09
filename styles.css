@@ -36,6 +36,12 @@
   --container-padding: 20px;
   --header-height: 70px; /* Added for consistency with sales-styles */
 }
+<<<<<<< HEAD
+=======
+h2 {
+  text-transform: none; /* This overrides any uppercase transformation */
+}
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 
 /* Reset and base styles */
 * {
@@ -452,7 +458,11 @@ button {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+<<<<<<< HEAD
   padding: var(--container-padding);
+=======
+  padding: 0 var(--container-padding);
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 }
 
 .properties-showcase h2 {
@@ -461,16 +471,27 @@ button {
   color: var(--text-dark);
   margin-bottom: var(--spacing-2xl);
   font-weight: 700;
+<<<<<<< HEAD
+=======
+  letter-spacing: -0.02em;
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 }
 
 .properties-grid-locations {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(3, 1fr); /* Three equal columns */
   gap: var(--spacing-lg);
+=======
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  align-items: stretch; /* Ensure cards stretch to equal height */
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 }
 
 .property-location-card {
   background-color: var(--bg-white);
+<<<<<<< HEAD
   border-radius: var(--border-radius-md);
   box-shadow: var(--shadow-md);
   overflow: hidden;
@@ -491,6 +512,43 @@ button {
 
 .property-location-card-content {
   padding: var(--spacing-md);
+=======
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  display: flex;
+  flex-direction: column; /* Ensure content stretches vertically */
+}
+
+.property-location-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.property-location-card-image {
+  overflow: hidden;
+}
+
+.property-location-card-image img {
+  width: 100%;
+  height: 220px; /* Slightly increased for better visual balance */
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.property-location-card:hover .property-location-card-image img {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+.property-location-card-content {
+  padding: var(--spacing-lg);
+  flex: 1; /* Allow content to take remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out content and button */
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 }
 
 .property-location-card-content h3 {
@@ -503,18 +561,30 @@ button {
 .property-location-card-content p {
   font-size: var(--font-size-md);
   color: var(--text-medium);
+<<<<<<< HEAD
   margin-bottom: var(--spacing-md);
   line-height: 1.6;
+=======
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.7;
+  flex-grow: 1; /* Ensure text takes available space */
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 }
 
 .btn-view-properties {
   display: inline-flex;
   align-items: center;
+<<<<<<< HEAD
   padding: var(--spacing-sm) var(--spacing-md);
+=======
+  justify-content: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
   background-color: var(--primary-color);
   color: var(--bg-white);
   font-size: var(--font-size-md);
   font-weight: 500;
+<<<<<<< HEAD
   border-radius: var(--border-radius-sm);
   text-decoration: none;
   transition: background-color var(--transition-fast);
@@ -522,21 +592,49 @@ button {
 
 .btn-view-properties i {
   margin-left: var(--spacing-xs);
+=======
+  border-radius: var(--border-radius-md);
+  text-decoration: none;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn-view-properties i {
+  margin-left: var(--spacing-sm);
+  transition: transform var(--transition-fast);
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 }
 
 .btn-view-properties:hover {
   background-color: var(--primary-hover);
+<<<<<<< HEAD
+=======
+  transform: translateX(5px); /* Slight slide effect on hover */
+}
+
+.btn-view-properties:hover i {
+  transform: translateX(3px); /* Arrow moves slightly more on hover */
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 }
 
 /* Responsive Design */
 @media (max-width: 992px) {
   .properties-grid-locations {
+<<<<<<< HEAD
     grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+=======
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .property-location-card-image img {
+    height: 200px; /* Adjust height for medium screens */
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
   }
 }
 
 @media (max-width: 768px) {
   .properties-grid-locations {
+<<<<<<< HEAD
     grid-template-columns: 1fr; /* One column on small screens */
   }
 
@@ -546,6 +644,37 @@ button {
 
   .property-location-card-image img {
     height: 250px; /* Slightly taller images on smaller screens */
+=======
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .property-location-card {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .property-location-card-image img {
+    height: 280px; /* Taller images for single-column layout */
+  }
+
+  .properties-showcase h2 {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 576px) {
+  .properties-showcase {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .property-location-card-content {
+    padding: var(--spacing-md);
+  }
+
+  .btn-view-properties {
+    width: 100%; /* Full-width button on small screens */
+    text-align: center;
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
   }
 }
 
@@ -1322,7 +1451,11 @@ button {
     text-align: center;
     color: #1a202c;
     margin-bottom: 3rem;
+<<<<<<< HEAD
     
+=======
+   
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
     letter-spacing: 0.05em;
 }
 
@@ -1378,7 +1511,11 @@ button {
     font-weight: 600;
     color: #2d3748;
     margin-bottom: 1rem;
+<<<<<<< HEAD
     text-transform: uppercase;
+=======
+    
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 }
 
 .apart-card-content p {

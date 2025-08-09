@@ -251,7 +251,11 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <img src="../1.png" alt="Proma Africa Logo">
+<<<<<<< HEAD
                     <p>Your trusted partner in property valuation and real estate services.</p>
+=======
+                    <p>Your trusted partner in Property Survey and real estate services.</p>
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>

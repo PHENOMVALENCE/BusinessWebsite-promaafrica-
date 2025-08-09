@@ -372,6 +372,7 @@ function formatPrice(price) {
     
     if (isMobile) {
         if (price >= 1000000000) {
+<<<<<<< HEAD
             return 'TSh ' + (price / 1000000000).toFixed(1) + 'B';
         } else if (price >= 1000000) {
             return 'TSh ' + (price / 1000000).toFixed(1) + 'M';
@@ -382,6 +383,18 @@ function formatPrice(price) {
     }
     
     return 'TSh ' + price.toLocaleString();
+=======
+            return 'TZS ' + (price / 1000000000).toFixed(1) + 'B';
+        } else if (price >= 1000000) {
+            return 'TZS ' + (price / 1000000).toFixed(1) + 'M';
+        } else if (price >= 1000) {
+            return 'TZS ' + (price / 1000).toFixed(0) + 'K';
+        }
+        return 'TZS ' + price.toLocaleString();
+    }
+    
+    return 'TZS ' + price.toLocaleString();
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 }
 
 function viewProperty(propertyId) {

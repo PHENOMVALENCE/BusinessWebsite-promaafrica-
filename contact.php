@@ -16,7 +16,10 @@
     <meta name="description" content="Get in touch with Proma Africa for professional Property Survey, land surveying, and real estate services across Tanzania and Africa. Contact our expert team today.">
     
     <link rel="stylesheet" href="styles.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="stylesss.css">
+=======
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
@@ -57,11 +60,14 @@
         }
 
         body {
+<<<<<<< HEAD
             /* Apply Gill Sans MT globally */
 
   font-family: "Gill Sans MT", sans-serif !important;
 
 
+=======
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);

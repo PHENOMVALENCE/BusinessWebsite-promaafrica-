@@ -16,7 +16,10 @@
     <meta name="description" content="Discover Proma Africa's comprehensive range of services including Property Survey, land surveying, real estate management, and consultancy across Tanzania and Africa.">
     
     <link rel="stylesheet" href="styles.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="stylesss.css">
+=======
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     

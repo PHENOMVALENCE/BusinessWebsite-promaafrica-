@@ -209,11 +209,14 @@ function getDisplayPhone($property, $settings) {
     }
     </script>
     <?php endif; ?>
+<<<<<<< HEAD
     <style>
         /* Apply Gill Sans MT globally */
 
 
     </style>
+=======
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
 </head>
 <body>
     <!-- Navigation -->

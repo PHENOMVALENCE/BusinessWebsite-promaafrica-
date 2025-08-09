@@ -4,9 +4,15 @@ class Database {
     private $connection;
     
     private $host = 'localhost';
+<<<<<<< HEAD
     private $database = 'u145584795_promaafrica';
     private $username = 'u145584795_protas';
     private $password = 'Promaafrica@2024';
+=======
+    private $database = 'property_cms';
+    private $username = 'root';
+    private $password = '';
+>>>>>>> 14f5e9e24283c5153d19a32d40ba4df87594b2eb
     private $charset = 'utf8mb4';
     
     private function __construct() {
