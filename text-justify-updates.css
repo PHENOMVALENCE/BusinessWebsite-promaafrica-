@@ -1,0 +1,90 @@
+/* Text Justification Updates for Proma Africa Website */
+
+/* About page text justification */
+.about-text p,
+.about-details .about-text p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Index page about section */
+.about .about-content .about-text p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Service card descriptions */
+.service-card p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Mission and Vision text */
+.mission p,
+.vision p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Core values descriptions */
+.value-card p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Feature card descriptions */
+.feature-card p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Team member descriptions */
+.member-info p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Directors message quote */
+.quote-container p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Footer description text */
+.footer-logo p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Company overview sections */
+.about-content p,
+.about-details p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Responsive adjustments - disable justify on very small screens for better readability */
+@media screen and (max-width: 480px) {
+  .about-text p,
+  .about-details .about-text p,
+  .about .about-content .about-text p,
+  .service-card p,
+  .mission p,
+  .vision p,
+  .value-card p,
+  .feature-card p,
+  .member-info p,
+  .quote-container p {
+    text-align: left;
+  }
+}
+
+/* Ensure proper spacing and readability with justified text */
+.about-text p,
+.service-card p,
+.value-card p,
+.feature-card p {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
